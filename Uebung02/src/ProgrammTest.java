@@ -1,6 +1,8 @@
 import org.junit.Before;
 import org.junit.Test;
 import java.util.Arrays;
+
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 public class ProgrammTest {
@@ -40,6 +42,24 @@ public class ProgrammTest {
         Programm.QuickSort(Feld3);
         assertTrue(Arrays.equals(new int[]{1, 2, 3, 4}, Feld3));
     }
+
+
+    @Test
+    public void Mitte_test1() {
+        assertEquals(2, Programm.IndexVonMitte(Feld1, 0, 3));
+    }
+
+    @Test
+    public void Mitte_test2() {
+        assertEquals(1, Programm.IndexVonMitte(Feld1, 0, 2));
+    }
+
+    @Test
+    public void Mitte_empty() {
+        assertEquals(0, Programm.IndexVonMitte(Feld2, 0, 0));
+    }
+
+
 
 
 
