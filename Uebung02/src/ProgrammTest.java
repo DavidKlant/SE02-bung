@@ -40,7 +40,7 @@ public class ProgrammTest {
     @Test
     public void Quicksort_sorted() {
         Programm.QuickSort(Feld3);
-        assertTrue(Arrays.equals(new int[]{1, 2, 3, 4}, Feld3));
+        assertTrue(Arrays.equals(new int[]{1, 2, 3, 4}, Feld4));
     }
 
 
